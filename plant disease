@@ -1,0 +1,98 @@
+<html>
+ <head>
+  <title>
+   Plant Disease Detection
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <header class="bg-green-600 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">
+     Plant Disease Detection
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:underline" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto mt-10">
+   <div class="bg-white p-8 rounded shadow-md">
+    <h2 class="text-2xl font-bold mb-4">
+     Upload Video
+    </h2>
+    <form class="space-y-4">
+     <div>
+      <label class="block text-sm font-medium text-gray-700" for="video">
+       Select Video
+      </label>
+      <input accept="video/*" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" id="video" name="video" type="file"/>
+     </div>
+     <button class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="submit">
+      Upload and Detect
+     </button>
+    </form>
+   </div>
+   <div class="mt-10">
+    <h2 class="text-2xl font-bold mb-4">
+     Detection Results
+    </h2>
+    <div class="bg-white p-8 rounded shadow-md">
+     <div class="flex items-center space-x-4">
+      <img alt="Thumbnail of the uploaded video showing a farm with plants" class="w-24 h-24 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/OUUJYiFw7447B9optS3XLU2fdfl67wzfIYWV8Rsrmyifo2DPB.jpg" width="100"/>
+      <div>
+       <h3 class="text-xl font-bold">
+        Video Title
+       </h3>
+       <p class="text-gray-600">
+        Uploaded on: 2023-10-01
+       </p>
+      </div>
+     </div>
+     <div class="mt-4">
+      <h4 class="text-lg font-bold">
+       Detected Diseases:
+      </h4>
+      <ul class="list-disc list-inside">
+       <li>
+        Powdery Mildew
+       </li>
+       <li>
+        Leaf Spot
+       </li>
+       <li>
+        Root Rot
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="bg-gray-800 text-white p-4 mt-10">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 Plant Disease Detection. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
